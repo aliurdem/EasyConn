@@ -4953,11 +4953,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\OkulProjects\\EasyConnect\\EasyConnect\\EasyConnect\\EasyConnect.csproj",
+      "projectUniqueName": "C:\\OkulProjects\\EasyConn\\EasyConn\\EasyConnect.csproj",
       "projectName": "EasyConnect",
-      "projectPath": "C:\\OkulProjects\\EasyConnect\\EasyConnect\\EasyConnect\\EasyConnect.csproj",
+      "projectPath": "C:\\OkulProjects\\EasyConn\\EasyConn\\EasyConnect.csproj",
       "packagesPath": "C:\\Users\\alieren.urdem\\.nuget\\packages\\",
-      "outputPath": "C:\\OkulProjects\\EasyConnect\\EasyConnect\\EasyConnect\\obj\\",
+      "outputPath": "C:\\OkulProjects\\EasyConn\\EasyConn\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\alieren.urdem\\AppData\\Roaming\\NuGet\\NuGet.Config",

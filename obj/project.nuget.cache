@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "n61a9NVPs30=",
+  "dgSpecHash": "SZYOHDZq4Ag=",
   "success": true,
-  "projectFilePath": "C:\\OkulProjects\\EasyConnect\\EasyConnect\\EasyConnect\\EasyConnect.csproj",
+  "projectFilePath": "C:\\OkulProjects\\EasyConn\\EasyConn\\EasyConnect.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\alieren.urdem\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\alieren.urdem\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
