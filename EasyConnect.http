@@ -1,0 +1,6 @@
+@EasyConnect_HostAddress = http://localhost:5160
+
+GET {{EasyConnect_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
