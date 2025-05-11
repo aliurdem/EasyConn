@@ -11,7 +11,10 @@ namespace EasyConnect.Models.Entities
         public string Phone { get; set; } 
         public string Address { get; set; }
         public int ProvinceCode { get; set; }
+        public int CategoryId { get; set; }
+        public byte[] ImageData { get; set; }
 
+        public Category Category { get; set; }
         public ICollection<Staff> Staffs { get; set; }
         public ICollection<Service> Services { get; set; } = new List<Service>();
         public ICollection<Holiday> Holidays { get; set; } = new List<Holiday>();

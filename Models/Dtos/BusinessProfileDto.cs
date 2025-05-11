@@ -10,6 +10,6 @@ namespace EasyConnect.Models.Dtos
         public string Phone { get; set; }
         public string Address { get; set; }
         public int ProvinceCode { get; set; }
-
+        public byte[] ImageData { get; set; }
     }
 }

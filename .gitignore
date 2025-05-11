@@ -1,0 +1,21 @@
+# Build output
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+
+# VS temporary files
+.vs/
+
+# ASP.NET logs
+logs/
+*.log
+
+# Configuration
+appsettings.*.json
+appsettings.*.Development.json
+
+# EF Migrations snapshots
+*Migrations/*.Designer.cs

@@ -10,7 +10,7 @@ namespace EasyConnect.Data
         public DbSet<BusinessProfile> BusinessProfiles { get; set; }
         public DbSet<Service> Services { get; set; }
         public DbSet<Staff> Staffs { get; set; }
-        public DbSet<WorkingHour> WorkingHours{ get; set; }
+        public DbSet<WorkingHour> WorkingHours { get; set; }
 
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
@@ -20,6 +20,13 @@ namespace EasyConnect.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+
+            // Seed Categories 
+            modelBuilder.Entity<Category>().HasData(
+      new Category { Id = 1, Name = "Kuaför" },
+      new Category { Id = 2, Name = "Güzellik Merkezi" },
+      new Category { Id = 3, Name = "Masaj Salonu" }
+  );
 
             /* User ↔ BusinessProfile : 1‑1 */
             modelBuilder.Entity<User>()
@@ -34,6 +41,17 @@ namespace EasyConnect.Data
                 .HasForeignKey(s => s.BusinessProfileId)
                 .OnDelete(DeleteBehavior.Restrict);
 
+            /* Category ↔ BusinessProfile : 1-n */
+            modelBuilder.Entity<BusinessProfile>()
+                .HasOne(s => s.Category)
+                .WithMany(b => b.Businesses)
+                .HasForeignKey(s => s.CategoryId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            // <-- BURAYA EKLE -->
+            modelBuilder.Entity<BusinessProfile>()
+                .Property(b => b.CategoryId)
+                .HasDefaultValue(1);
 
             /* BusinessProfile ↔ Service : n‑n */
             modelBuilder.Entity<BusinessProfile>()
@@ -101,10 +119,10 @@ namespace EasyConnect.Data
             // Appointment 
 
             modelBuilder.Entity<Appointment>()
-    .HasOne(a => a.User)
-    .WithMany()
-    .HasForeignKey(a => a.UserId)
-    .OnDelete(DeleteBehavior.Restrict);
+            .HasOne(a => a.User)
+            .WithMany()
+            .HasForeignKey(a => a.UserId)
+            .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder.Entity<Appointment>()
                 .HasOne(a => a.BusinessProfile)

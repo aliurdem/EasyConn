@@ -47,7 +47,8 @@ namespace EasyConnect.Application.Services
                 BusinessName = b.BusinessName,
                 Phone = b.Phone,
                 Address = b.Address,
-                ProvinceCode = b.ProvinceCode
+                ProvinceCode = b.ProvinceCode,
+                ImageData = b.ImageData,
             }).ToList();
 
             return new SuccessDataResult<List<BusinessProfileDto>>(dtoList);

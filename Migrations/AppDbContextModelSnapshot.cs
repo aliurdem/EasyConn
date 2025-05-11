@@ -81,7 +81,7 @@ namespace EasyConnect.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Appointment", (string)null);
+                    b.ToTable("Appointment");
                 });
 
             modelBuilder.Entity("EasyConnect.Models.Entities.BusinessProfile", b =>
@@ -100,6 +100,15 @@ namespace EasyConnect.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("CategoryId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasDefaultValue(1);
+
+                    b.Property<byte[]>("ImageData")
+                        .IsRequired()
+                        .HasColumnType("varbinary(max)");
+
                     b.Property<string>("Phone")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -113,10 +122,46 @@ namespace EasyConnect.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("CategoryId");
+
                     b.HasIndex("UserId")
                         .IsUnique();
 
-                    b.ToTable("BusinessProfiles", (string)null);
+                    b.ToTable("BusinessProfiles");
+                });
+
+            modelBuilder.Entity("EasyConnect.Models.Entities.Category", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Category");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "Kuaför"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "Güzellik Merkezi"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Name = "Masaj Salonu"
+                        });
                 });
 
             modelBuilder.Entity("EasyConnect.Models.Entities.Holiday", b =>
@@ -141,7 +186,7 @@ namespace EasyConnect.Migrations
                     b.HasIndex("BusinessProfileId", "Date")
                         .IsUnique();
 
-                    b.ToTable("Holiday", (string)null);
+                    b.ToTable("Holiday");
                 });
 
             modelBuilder.Entity("EasyConnect.Models.Entities.Service", b =>
@@ -164,7 +209,7 @@ namespace EasyConnect.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Services", (string)null);
+                    b.ToTable("Services");
                 });
 
             modelBuilder.Entity("EasyConnect.Models.Entities.Staff", b =>
@@ -186,7 +231,7 @@ namespace EasyConnect.Migrations
 
                     b.HasIndex("BusinessProfileId");
 
-                    b.ToTable("Staffs", (string)null);
+                    b.ToTable("Staffs");
                 });
 
             modelBuilder.Entity("EasyConnect.Models.Entities.User", b =>
@@ -285,7 +330,7 @@ namespace EasyConnect.Migrations
                     b.HasIndex("BusinessProfileId", "DayOfWeek")
                         .IsUnique();
 
-                    b.ToTable("WorkingHours", (string)null);
+                    b.ToTable("WorkingHours");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -473,11 +518,19 @@ namespace EasyConnect.Migrations
 
             modelBuilder.Entity("EasyConnect.Models.Entities.BusinessProfile", b =>
                 {
+                    b.HasOne("EasyConnect.Models.Entities.Category", "Category")
+                        .WithMany("Businesses")
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
                     b.HasOne("EasyConnect.Models.Entities.User", "User")
                         .WithOne("BusinessProfile")
                         .HasForeignKey("EasyConnect.Models.Entities.BusinessProfile", "UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Category");
 
                     b.Navigation("User");
                 });
@@ -571,6 +624,11 @@ namespace EasyConnect.Migrations
                     b.Navigation("Holidays");
 
                     b.Navigation("Staffs");
+                });
+
+            modelBuilder.Entity("EasyConnect.Models.Entities.Category", b =>
+                {
+                    b.Navigation("Businesses");
                 });
 
             modelBuilder.Entity("EasyConnect.Models.Entities.User", b =>
