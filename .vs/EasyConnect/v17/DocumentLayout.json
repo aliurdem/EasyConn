@@ -3,24 +3,16 @@
   "WorkspaceRootPath": "C:\\OkulProjects\\EasyConn\\EasyConn\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\OkulProjects\\EasyConn\\EasyConn\\obj\\Debug\\net8.0\\EasyConnect.AssemblyInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:obj\\Debug\\net8.0\\EasyConnect.AssemblyInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4A9FDBD8-22D9-4DD4-A256-43EDBEE23BBA}|EasyConnect.csproj|c:\\okulprojects\\easyconn\\easyconn\\application\\services\\businessservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4A9FDBD8-22D9-4DD4-A256-43EDBEE23BBA}|EasyConnect.csproj|solutionrelative:application\\services\\businessservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4A9FDBD8-22D9-4DD4-A256-43EDBEE23BBA}|EasyConnect.csproj|c:\\okulprojects\\easyconn\\easyconn\\models\\dtos\\businessprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4A9FDBD8-22D9-4DD4-A256-43EDBEE23BBA}|EasyConnect.csproj|solutionrelative:models\\dtos\\businessprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A9FDBD8-22D9-4DD4-A256-43EDBEE23BBA}|EasyConnect.csproj|c:\\okulprojects\\easyconn\\easyconn\\models\\entities\\businessprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A9FDBD8-22D9-4DD4-A256-43EDBEE23BBA}|EasyConnect.csproj|solutionrelative:models\\entities\\businessprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A9FDBD8-22D9-4DD4-A256-43EDBEE23BBA}|EasyConnect.csproj|c:\\okulprojects\\easyconn\\easyconn\\models\\dtos\\businessprofileserviceassigndto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A9FDBD8-22D9-4DD4-A256-43EDBEE23BBA}|EasyConnect.csproj|solutionrelative:models\\dtos\\businessprofileserviceassigndto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A9FDBD8-22D9-4DD4-A256-43EDBEE23BBA}|EasyConnect.csproj|c:\\okulprojects\\easyconn\\easyconn\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A9FDBD8-22D9-4DD4-A256-43EDBEE23BBA}|EasyConnect.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -67,66 +59,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "BusinessService.cs",
-              "DocumentMoniker": "C:\\OkulProjects\\EasyConn\\EasyConn\\Application\\Services\\BusinessService.cs",
-              "RelativeDocumentMoniker": "Application\\Services\\BusinessService.cs",
-              "ToolTip": "C:\\OkulProjects\\EasyConn\\EasyConn\\Application\\Services\\BusinessService.cs",
-              "RelativeToolTip": "Application\\Services\\BusinessService.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAAABwAAAAiAAAA",
+              "Title": "EasyConnect.AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\OkulProjects\\EasyConn\\EasyConn\\obj\\Debug\\net8.0\\EasyConnect.AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "obj\\Debug\\net8.0\\EasyConnect.AssemblyInfo.cs",
+              "ToolTip": "C:\\OkulProjects\\EasyConn\\EasyConn\\obj\\Debug\\net8.0\\EasyConnect.AssemblyInfo.cs",
+              "RelativeToolTip": "obj\\Debug\\net8.0\\EasyConnect.AssemblyInfo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T12:23:19.86Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BusinessProfileServiceAssignDto.cs",
-              "DocumentMoniker": "C:\\OkulProjects\\EasyConn\\EasyConn\\Models\\Dtos\\BusinessProfileServiceAssignDto.cs",
-              "RelativeDocumentMoniker": "Models\\Dtos\\BusinessProfileServiceAssignDto.cs",
-              "ToolTip": "C:\\OkulProjects\\EasyConn\\EasyConn\\Models\\Dtos\\BusinessProfileServiceAssignDto.cs",
-              "RelativeToolTip": "Models\\Dtos\\BusinessProfileServiceAssignDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T12:20:16.012Z",
+              "WhenOpened": "2025-05-11T14:07:30.775Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "BusinessProfileDto.cs",
-              "DocumentMoniker": "C:\\OkulProjects\\EasyConn\\EasyConn\\Models\\Dtos\\BusinessProfileDto.cs",
-              "RelativeDocumentMoniker": "Models\\Dtos\\BusinessProfileDto.cs",
-              "ToolTip": "C:\\OkulProjects\\EasyConn\\EasyConn\\Models\\Dtos\\BusinessProfileDto.cs",
-              "RelativeToolTip": "Models\\Dtos\\BusinessProfileDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAoAAAArAAAA",
+              "Title": "BusinessService.cs",
+              "DocumentMoniker": "C:\\OkulProjects\\EasyConn\\EasyConn\\Application\\Services\\BusinessService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\BusinessService.cs",
+              "ToolTip": "C:\\OkulProjects\\EasyConn\\EasyConn\\Application\\Services\\BusinessService.cs",
+              "RelativeToolTip": "Application\\Services\\BusinessService.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAiwDMAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T12:20:06.494Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\OkulProjects\\EasyConn\\EasyConn\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
-              "ToolTip": "C:\\OkulProjects\\EasyConn\\EasyConn\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "Data\\AppDbContext.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAswAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T12:19:40.501Z",
+              "WhenOpened": "2025-05-11T14:07:18.324Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "BusinessProfile.cs",
-              "DocumentMoniker": "C:\\OkulProjects\\EasyConn\\EasyConn\\Models\\Entities\\BusinessProfile.cs",
-              "RelativeDocumentMoniker": "Models\\Entities\\BusinessProfile.cs",
-              "ToolTip": "C:\\OkulProjects\\EasyConn\\EasyConn\\Models\\Entities\\BusinessProfile.cs",
-              "RelativeToolTip": "Models\\Entities\\BusinessProfile.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAtAAAA",
+              "Title": "BusinessProfileDto.cs",
+              "DocumentMoniker": "C:\\OkulProjects\\EasyConn\\EasyConn\\Models\\Dtos\\BusinessProfileDto.cs",
+              "RelativeDocumentMoniker": "Models\\Dtos\\BusinessProfileDto.cs",
+              "ToolTip": "C:\\OkulProjects\\EasyConn\\EasyConn\\Models\\Dtos\\BusinessProfileDto.cs",
+              "RelativeToolTip": "Models\\Dtos\\BusinessProfileDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T11:56:43.264Z",
+              "WhenOpened": "2025-05-11T12:20:06.494Z",
               "EditorCaption": ""
             }
           ]

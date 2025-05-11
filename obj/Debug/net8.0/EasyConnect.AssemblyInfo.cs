@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EasyConnect")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e44a56e836f5f48155d18f507adcfc8d150ab8b4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ff317c481c4db1962afd623cdd6f7e3a143cb684")]
 [assembly: System.Reflection.AssemblyProductAttribute("EasyConnect")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EasyConnect")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
